@@ -8,3 +8,13 @@ D:\Lehel Barnabás 13p\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezven
 D:\Lehel Barnabás 13p\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.CoreCompileInputs.cache
 D:\Lehel Barnabás 13p\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.exe
 D:\Lehel Barnabás 13p\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.pdb
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\Rendezvenyszervezes.exe.config
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\Rendezvenyszervezes.exe
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\Rendezvenyszervezes.pdb
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.AssemblyReference.cache
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.Form1.resources
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.Properties.Resources.resources
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.GenerateResource.cache
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.CoreCompileInputs.cache
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.exe
+D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.pdb
