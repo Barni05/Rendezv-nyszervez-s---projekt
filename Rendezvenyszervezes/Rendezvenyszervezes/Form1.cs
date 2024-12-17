@@ -8,32 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rendezvenyszervezes
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
+namespace Rendezvenyszervezes {
+    public partial class Form1 : Form {
+        public Form1() {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) {
             DataTable dt = new DataTable();
             dt.Columns.Add("Autó neve".ToString());
             dt.Columns.Add("Hol tartózkodik".ToString());
             DataRow dr = dt.NewRow();
-            dr["Autó neve"] = "Mike";
+            dr["Autó neve"] = "Mike Wazowski";
             dr["Hol tartózkodik"] = "Hajdúszoboszló";
             dt.Rows.Add(dr);
 
@@ -42,21 +28,14 @@ namespace Rendezvenyszervezes
             dt.Columns.Add("Kellék neve".ToString());
             dt.Columns.Add("Hol tartózkodik".ToString());
              dr = dt.NewRow();
-            dr["Kellék neve"] = "Mike";
+            dr["Kellék neve"] = "Mike Wazowski";
             dr["Hol tartózkodik"] = "Hajdúszoboszló";
             dt.Rows.Add(dr);
 
             grid_props.DataSource = dt;
-        }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-                
+            Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
+            MessageBox.Show(v.Capacity.ToString());
         }
     }
 }

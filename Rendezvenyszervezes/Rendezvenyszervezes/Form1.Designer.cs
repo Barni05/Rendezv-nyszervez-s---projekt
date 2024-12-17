@@ -302,7 +302,6 @@
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "telephelyen található";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox2
             // 
@@ -353,7 +352,6 @@
             this.label8.Size = new System.Drawing.Size(111, 13);
             this.label8.TabIndex = 2;
             this.label8.Text = "Rendezvény kezdete:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // dtp_eventStarts
             // 
