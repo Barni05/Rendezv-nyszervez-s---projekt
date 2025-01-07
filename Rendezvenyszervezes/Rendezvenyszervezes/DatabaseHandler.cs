@@ -16,8 +16,8 @@ namespace Rendezvenyszervezes {
             ConnectToDb();
         }
         public void ConnectToDb() {
-            if(this.connectionString != null) {
-                connection = new MySqlConnection(this.connectionString);
+            if(connectionString != null) {
+                connection = new MySqlConnection(connectionString);
                 connection.Open();
             } else {
                 MessageBox.Show("Couldn't connect to database", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -25,22 +25,20 @@ namespace Rendezvenyszervezes {
         }
 
         public string[][] Query(string queryStr) {
-            List<string[]> results = new List<string[]>();
+            List<string[]> results = new();
 
             try {
 
-                using(MySqlCommand cmd = new MySqlCommand(queryStr, connection)) {
-                    using(MySqlDataReader reader = cmd.ExecuteReader()) {
-                        int columnCount = reader.FieldCount;
+                using MySqlCommand cmd = new(queryStr, connection);
+                using MySqlDataReader reader = cmd.ExecuteReader();
+                int columnCount = reader.FieldCount;
 
-                        while(reader.Read()) {
-                            string[] row = new string[columnCount];
-                            for(int i = 0; i < columnCount; i++) {
-                                row[i] = reader.GetValue(i).ToString();
-                            }
-                            results.Add(row);
-                        }
+                while(reader.Read()) {
+                    string[] row = new string[columnCount];
+                    for(int i = 0; i < columnCount; i++) {
+                        row[i] = reader.GetValue(i).ToString();
                     }
+                    results.Add(row);
                 }
 
             } catch(Exception ex) {

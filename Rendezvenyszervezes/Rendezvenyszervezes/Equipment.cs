@@ -4,6 +4,7 @@ namespace Rendezvenyszervezes {
         int numberOfUses;
         int maintenanceFrequency;
         int size;
+
         public Equipment(string _name, int _size) {
             this.name = _name;
             this.numberOfUses = 0;

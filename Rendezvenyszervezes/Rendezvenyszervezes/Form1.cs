@@ -13,14 +13,14 @@ using MySql.Data.MySqlClient;
 namespace Rendezvenyszervezes {
     public partial class Form1 : Form {
 
-        public static DatabaseHandler databaseHandler = new DatabaseHandler("server=127.0.0.1;user=root;password=;database=event_organizer");
-        public List<Equipment> equipment_request = new List<Equipment>();
+        public static DatabaseHandler databaseHandler = new("server=127.0.0.1;user=root;password=;database=event_organizer");
+        public List<Equipment> equipment_request = new();
         public Form1() {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            DataTable dt = new DataTable();
+            DataTable dt = new();
             dt.Columns.Add("Autó neve".ToString());
             dt.Columns.Add("Hol tartózkodik".ToString());
             DataRow dr = dt.NewRow();
@@ -72,8 +72,7 @@ namespace Rendezvenyszervezes {
             string eventLocation = tb_eventVenue.Text;
             DateTime eventStart = dtp_eventStarts.Value;
             DateTime eventEnd = dtp_eventEnds.Value;
-            EventType eventType;
-            Enum.TryParse(cb_eventType.SelectedValue.ToString(), false, out eventType);
+            Enum.TryParse(cb_eventType.SelectedValue.ToString(), false, out EventType eventType);
 
         }
         private void BindInputs() {
