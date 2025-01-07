@@ -74,8 +74,14 @@ namespace Rendezvenyszervezes {
             DateTime eventStart = dtp_eventStarts.Value;
             DateTime eventEnd = dtp_eventEnds.Value;
             EventType eventType;
-            Enum.TryParse(cb_eventType.SelectedValue.ToString(), false, out eventType);
+            Enum.TryParse(cb_eventType.SelectedText.ToString(), false, out eventType);
+            string query = $"""INSERT INTO event (event_id,location_id,start_date,end_date,type) VALUES({eventId},{eventLocation}, "{eventStart.ToString()}", "{eventEnd.ToString()}", "{eventType.ToString()}");""";
+            databaseHandler.Query(query);
 
+            foreach(var equipment in equipment_request) {
+                query = $"""INSERT INTO event_equipment (event_id,equipment_id,quantity) VALUES({eventId}, {equipment.Id}, {equipment.Size})""";
+                databaseHandler.Query(query);
+            }
         }  
         private void BindInputs() {
             btn_addEquipment.Click += (sender, e) => Click_kellekfelvetel();
