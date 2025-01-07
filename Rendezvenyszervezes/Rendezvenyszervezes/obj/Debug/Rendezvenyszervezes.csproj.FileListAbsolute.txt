@@ -18,3 +18,15 @@ D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenysze
 D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.CoreCompileInputs.cache
 D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.exe
 D:\Lehel barnabás\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.pdb
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\Rendezvenyszervezes.exe.config
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\Rendezvenyszervezes.exe
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\Rendezvenyszervezes.pdb
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\MySql.Data.dll
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.AssemblyReference.cache
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.Form1.resources
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.Properties.Resources.resources
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.GenerateResource.cache
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.CoreCompileInputs.cache
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.CopyComplete
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.exe
+C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.pdb

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace Rendezvenyszervezes {
     public partial class Form1 : Form {
@@ -33,9 +35,22 @@ namespace Rendezvenyszervezes {
             dt.Rows.Add(dr);
 
             grid_props.DataSource = dt;
-
-            Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
-            MessageBox.Show(v.Capacity.ToString());
+			
+			Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
+			string connString = "server=127.0.0.1;user=root;password=;database=event_organizer";
+			DatabaseHandler dbHandler = new DatabaseHandler(connString);
+			string[][] result = dbHandler.Query("SELECT * FROM equipment");
+			if (result != null)
+			{
+				foreach (string[] row in result)
+				{
+					foreach (string value in row)
+					{
+						MessageBox.Show(value);
+					}
+					Console.WriteLine();
+				}
+			}
         }
     }
 }
