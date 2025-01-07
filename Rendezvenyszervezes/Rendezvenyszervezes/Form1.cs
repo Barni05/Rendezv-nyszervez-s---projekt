@@ -65,7 +65,8 @@ namespace Rendezvenyszervezes {
         private void Click_kellekfelvetel_event() {
             string propId = tb_propId_adding.Text;
             int propQuantity = Convert.ToInt32(nud_propQuantity_adding.Value);
-            equipment_request.Add(new Equipment())
+            string[][] result = databaseHandler.Query($"SELECT name FROM equipment WHERE equipment_id={propId} LIMIT 1;");
+            equipment_request.Add(new Equipment(result[0][0], propQuantity));
         }
         private void Click_eventfelvetel() {
             string eventLocation = tb_eventVenue.Text;

@@ -4,10 +4,10 @@ namespace Rendezvenyszervezes {
         int numberOfUses;
         int maintenanceFrequency;
         int size;
-        public Equipment(string _name, int _numberOfUses, int _maintenanceFreqeuency, int _size) {
+        public Equipment(string _name, int _size) {
             this.name = _name;
-            this.numberOfUses = _numberOfUses;
-            this.maintenanceFrequency = _maintenanceFreqeuency;
+            this.numberOfUses = 0;
+            this.maintenanceFrequency = 1;
             this.size = _size;
         }
     }
