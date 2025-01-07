@@ -14,7 +14,7 @@ namespace Rendezvenyszervezes {
     public partial class Form1 : Form {
 
         public static DatabaseHandler databaseHandler = new DatabaseHandler("server=127.0.0.1;user=root;password=;database=event_organizer");
-        public List<Equipment> equipment_request = new List<Equipment>();
+        public List<Equipment> equipment_request = new();
         public Form1() {
             InitializeComponent();
         }
@@ -50,7 +50,7 @@ namespace Rendezvenyszervezes {
             int equipmentId = Convert.ToInt32(tb_equipmentId.Text);
             string query = $"INSERT INTO equipment (equipment_id, name, volume) VALUES(\"{equipmentId}\",\"{propName}\", \"{quantity}\");";
             databaseHandler.Query(query);
-            query = $"INSERT INTO warehouse_equipment (warehouse_id, equipment_id, quantity) VALUES(\"{propLocation}\", \"{equipmentId}\", \"{quantity}\")";
+            query = $"INSERT INTO warehouse_equipment (warehouse_id, equipment_id, quantity) VALUES(\"{propLocation}\", \"{equipmentId}\", \"{quantity}\");";
             databaseHandler.Query(query);
         }
         private void Click_autofelvetel() {
@@ -63,19 +63,27 @@ namespace Rendezvenyszervezes {
             databaseHandler.Query(query);
         }
         private void Click_kellekfelvetel_event() {
-            string propId = tb_propId_adding.Text;
+            int propId = Convert.ToInt32(tb_propId_adding.Text);
             int propQuantity = Convert.ToInt32(nud_propQuantity_adding.Value);
             string[][] result = databaseHandler.Query($"SELECT name FROM equipment WHERE equipment_id={propId} LIMIT 1;");
-            equipment_request.Add(new Equipment(result[0][0], propQuantity));
+            equipment_request.Add(new Equipment(propId, result[0][0],0, 0, propQuantity));
         }
         private void Click_eventfelvetel() {
-            string eventLocation = tb_eventVenue.Text;
+            int eventLocation = Convert.ToInt32(tb_eventVenue.Text);
+            int eventId = Convert.ToInt32(tb_eventId.Text);
             DateTime eventStart = dtp_eventStarts.Value;
             DateTime eventEnd = dtp_eventEnds.Value;
             EventType eventType;
             Enum.TryParse(cb_eventType.SelectedValue.ToString(), false, out eventType);
+            string query = $"""INSERT INTO event (event_id,location_id,start_date,end_date,type) VALUES({eventId},{eventLocation}, "{eventStart.ToString()}", "{eventEnd.ToString()}", "{eventType.ToString()}");""";
+            databaseHandler.Query(query);
 
-        }
+            foreach (var equipment in equipment_request)
+            {
+                query = $"""INSERT INTO event_equipment (event_id,equipment_id,quantity) VALUES({eventId}, {equipment.Id}, {equipment.Size})""";
+            }
+
+        }  
         private void BindInputs() {
             btn_addEquipment.Click += (sender, e) => Click_kellekfelvetel();
             btn_addCars.Click += (sender, e) => Click_autofelvetel();
