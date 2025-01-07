@@ -1,7 +1,8 @@
 namespace Rendezvenyszervezes {
     enum EventType {
-        Wedding,
-        Prom,
-        Concert,
+        álló,
+        ülõ,
+        vegyes,
+        étkezés_nélkül
     }
 }
