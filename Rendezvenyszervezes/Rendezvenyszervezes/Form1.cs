@@ -13,14 +13,14 @@ using MySql.Data.MySqlClient;
 namespace Rendezvenyszervezes {
     public partial class Form1 : Form {
 
-        public static DatabaseHandler databaseHandler = new DatabaseHandler("server=127.0.0.1;user=root;password=;database=event_organizer");
+        public static DatabaseHandler databaseHandler = new("server=127.0.0.1;user=root;password=;database=event_organizer");
         public List<Equipment> equipment_request = new();
         public Form1() {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            DataTable dt = new DataTable();
+            DataTable dt = new();
             dt.Columns.Add("Autó neve".ToString());
             dt.Columns.Add("Hol tartózkodik".ToString());
             DataRow dr = dt.NewRow();
@@ -32,17 +32,17 @@ namespace Rendezvenyszervezes {
             dt = new DataTable();
             dt.Columns.Add("Kellék neve".ToString());
             dt.Columns.Add("Hol tartózkodik".ToString());
-             dr = dt.NewRow();
+            dr = dt.NewRow();
             dr["Kellék neve"] = "Mike Wazowski";
             dr["Hol tartózkodik"] = "Hajdúszoboszló";
             dt.Rows.Add(dr);
 
             grid_props.DataSource = dt;
-			
-			Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
+
+            Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
             BindInputs();
         }
-        private void Click_kellekfelvetel() { 
+        private void Click_kellekfelvetel() {
             //Extracting user data
             int quantity = Convert.ToInt32(nud_equipmentVolume.Value);
             string propName = tb_equipmentName.Text;
@@ -75,13 +75,6 @@ namespace Rendezvenyszervezes {
             DateTime eventEnd = dtp_eventEnds.Value;
             EventType eventType;
             Enum.TryParse(cb_eventType.SelectedValue.ToString(), false, out eventType);
-            string query = $"""INSERT INTO event (event_id,location_id,start_date,end_date,type) VALUES({eventId},{eventLocation}, "{eventStart.ToString()}", "{eventEnd.ToString()}", "{eventType.ToString()}");""";
-            databaseHandler.Query(query);
-
-            foreach (var equipment in equipment_request)
-            {
-                query = $"""INSERT INTO event_equipment (event_id,equipment_id,quantity) VALUES({eventId}, {equipment.Id}, {equipment.Size})""";
-            }
 
         }  
         private void BindInputs() {
