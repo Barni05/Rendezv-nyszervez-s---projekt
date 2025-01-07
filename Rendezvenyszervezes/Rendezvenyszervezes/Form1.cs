@@ -14,7 +14,7 @@ namespace Rendezvenyszervezes {
     public partial class Form1 : Form {
 
         public static DatabaseHandler databaseHandler = new DatabaseHandler("server=127.0.0.1;user=root;password=;database=event_organizer");
-
+        public List<Equipment> equipment_request = new List<Equipment>();
         public Form1() {
             InitializeComponent();
         }
@@ -62,9 +62,24 @@ namespace Rendezvenyszervezes {
             query = $""" INSERT INTO truckparking (parking_id, truck_id) VALUES("{truckLocation}", "{truckId}");""";
             databaseHandler.Query(query);
         }
+        private void Click_kellekfelvetel_event() {
+            string propId = tb_propId_adding.Text;
+            int propQuantity = Convert.ToInt32(nud_propQuantity_adding.Value);
+            equipment_request.Add(new Equipment())
+        }
+        private void Click_eventfelvetel() {
+            string eventLocation = tb_eventVenue.Text;
+            DateTime eventStart = dtp_eventStarts.Value;
+            DateTime eventEnd = dtp_eventEnds.Value;
+            EventType eventType;
+            Enum.TryParse(cb_eventType.SelectedValue.ToString(), false, out eventType);
+
+        }
         private void BindInputs() {
             btn_addEquipment.Click += (sender, e) => Click_kellekfelvetel();
             btn_addCars.Click += (sender, e) => Click_autofelvetel();
+            btn_addProp_newevent.Click += (sender, e) => Click_kellekfelvetel_event();
+            btn_addEvent.Click += (sender, e) => Click_eventfelvetel();
         }
     }
 }

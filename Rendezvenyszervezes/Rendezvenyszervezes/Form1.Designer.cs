@@ -49,6 +49,10 @@
             this.lb_carNumber = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tb_truckId = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tb_equipmentId = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.nud_equipmentVolume = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.tb_equipmentLocation = new System.Windows.Forms.TextBox();
@@ -63,10 +67,10 @@
             this.btn_addProp_newevent = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.tb_propId_adding = new System.Windows.Forms.TextBox();
+            this.nud_propQuantity_adding = new System.Windows.Forms.NumericUpDown();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_eventType = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dtp_eventEnds = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
@@ -75,10 +79,6 @@
             this.tb_eventVenue = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tb_equipmentId = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tb_truckId = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
             label13 = new System.Windows.Forms.Label();
             label14 = new System.Windows.Forms.Label();
             this.tabPage2.SuspendLayout();
@@ -92,7 +92,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_equipmentVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_propQuantity_adding)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -329,10 +329,10 @@
             this.tabPage4.Controls.Add(this.btn_addProp_newevent);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.numericUpDown2);
+            this.tabPage4.Controls.Add(this.tb_propId_adding);
+            this.tabPage4.Controls.Add(this.nud_propQuantity_adding);
             this.tabPage4.Controls.Add(this.dataGridView2);
-            this.tabPage4.Controls.Add(this.comboBox1);
+            this.tabPage4.Controls.Add(this.cb_eventType);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Controls.Add(this.dtp_eventEnds);
             this.tabPage4.Controls.Add(this.label9);
@@ -347,12 +347,44 @@
             this.tabPage4.Text = "Új dolgok";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // tb_truckId
+            // 
+            this.tb_truckId.Location = new System.Drawing.Point(419, 48);
+            this.tb_truckId.Name = "tb_truckId";
+            this.tb_truckId.Size = new System.Drawing.Size(166, 20);
+            this.tb_truckId.TabIndex = 9;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(357, 48);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(58, 13);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "Azonosító:";
+            // 
+            // tb_equipmentId
+            // 
+            this.tb_equipmentId.Location = new System.Drawing.Point(419, 168);
+            this.tb_equipmentId.Name = "tb_equipmentId";
+            this.tb_equipmentId.Size = new System.Drawing.Size(166, 20);
+            this.tb_equipmentId.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(357, 168);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 13);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "Azonosító:";
+            // 
             // nud_equipmentVolume
             // 
             this.nud_equipmentVolume.Location = new System.Drawing.Point(419, 243);
             this.nud_equipmentVolume.Name = "nud_equipmentVolume";
             this.nud_equipmentVolume.Size = new System.Drawing.Size(166, 20);
-            this.nud_equipmentVolume.TabIndex = 30;
+            this.nud_equipmentVolume.TabIndex = 15;
             // 
             // label17
             // 
@@ -368,7 +400,7 @@
             this.tb_equipmentLocation.Location = new System.Drawing.Point(419, 219);
             this.tb_equipmentLocation.Name = "tb_equipmentLocation";
             this.tb_equipmentLocation.Size = new System.Drawing.Size(166, 20);
-            this.tb_equipmentLocation.TabIndex = 28;
+            this.tb_equipmentLocation.TabIndex = 14;
             // 
             // label16
             // 
@@ -384,7 +416,7 @@
             this.tb_equipmentName.Location = new System.Drawing.Point(419, 194);
             this.tb_equipmentName.Name = "tb_equipmentName";
             this.tb_equipmentName.Size = new System.Drawing.Size(166, 20);
-            this.tb_equipmentName.TabIndex = 26;
+            this.tb_equipmentName.TabIndex = 13;
             // 
             // label15
             // 
@@ -400,7 +432,7 @@
             this.btn_addEquipment.Location = new System.Drawing.Point(360, 268);
             this.btn_addEquipment.Name = "btn_addEquipment";
             this.btn_addEquipment.Size = new System.Drawing.Size(151, 23);
-            this.btn_addEquipment.TabIndex = 23;
+            this.btn_addEquipment.TabIndex = 16;
             this.btn_addEquipment.Text = "Kellék hozzáadása";
             this.btn_addEquipment.UseVisualStyleBackColor = true;
             // 
@@ -409,7 +441,7 @@
             this.tb_truckLocation.Location = new System.Drawing.Point(419, 74);
             this.tb_truckLocation.Name = "tb_truckLocation";
             this.tb_truckLocation.Size = new System.Drawing.Size(166, 20);
-            this.tb_truckLocation.TabIndex = 22;
+            this.tb_truckLocation.TabIndex = 10;
             // 
             // label3
             // 
@@ -425,7 +457,7 @@
             this.btn_addCars.Location = new System.Drawing.Point(360, 95);
             this.btn_addCars.Name = "btn_addCars";
             this.btn_addCars.Size = new System.Drawing.Size(151, 23);
-            this.btn_addCars.TabIndex = 18;
+            this.btn_addCars.TabIndex = 11;
             this.btn_addCars.Text = "Autó hozzáadása";
             this.btn_addCars.UseVisualStyleBackColor = true;
             // 
@@ -434,7 +466,7 @@
             this.btn_addEvent.Location = new System.Drawing.Point(68, 360);
             this.btn_addEvent.Name = "btn_addEvent";
             this.btn_addEvent.Size = new System.Drawing.Size(227, 37);
-            this.btn_addEvent.TabIndex = 17;
+            this.btn_addEvent.TabIndex = 8;
             this.btn_addEvent.Text = "Rendezvény hozzáadása";
             this.btn_addEvent.UseVisualStyleBackColor = true;
             // 
@@ -444,7 +476,7 @@
             this.btn_addProp_newevent.Location = new System.Drawing.Point(141, 175);
             this.btn_addProp_newevent.Name = "btn_addProp_newevent";
             this.btn_addProp_newevent.Size = new System.Drawing.Size(200, 23);
-            this.btn_addProp_newevent.TabIndex = 16;
+            this.btn_addProp_newevent.TabIndex = 7;
             this.btn_addProp_newevent.Text = "Kellék felvétele";
             this.btn_addProp_newevent.UseVisualStyleBackColor = false;
             // 
@@ -453,32 +485,32 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(20, 151);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(66, 13);
+            this.label12.Size = new System.Drawing.Size(98, 13);
             this.label12.TabIndex = 15;
-            this.label12.Text = "Kellék neve:";
+            this.label12.Text = "Kellék mennyisége:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(20, 125);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 13);
+            this.label11.Size = new System.Drawing.Size(97, 13);
             this.label11.TabIndex = 14;
-            this.label11.Text = "Kellék neve:";
+            this.label11.Text = "Kellék azonosítója:";
             // 
-            // textBox3
+            // tb_propId_adding
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 13;
+            this.tb_propId_adding.Location = new System.Drawing.Point(141, 122);
+            this.tb_propId_adding.Name = "tb_propId_adding";
+            this.tb_propId_adding.Size = new System.Drawing.Size(200, 20);
+            this.tb_propId_adding.TabIndex = 5;
             // 
-            // numericUpDown2
+            // nud_propQuantity_adding
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(141, 149);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(200, 20);
-            this.numericUpDown2.TabIndex = 11;
+            this.nud_propQuantity_adding.Location = new System.Drawing.Point(141, 149);
+            this.nud_propQuantity_adding.Name = "nud_propQuantity_adding";
+            this.nud_propQuantity_adding.Size = new System.Drawing.Size(200, 20);
+            this.nud_propQuantity_adding.TabIndex = 6;
             // 
             // dataGridView2
             // 
@@ -488,14 +520,14 @@
             this.dataGridView2.Size = new System.Drawing.Size(318, 150);
             this.dataGridView2.TabIndex = 8;
             // 
-            // comboBox1
+            // cb_eventType
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 95);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cb_eventType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_eventType.FormattingEnabled = true;
+            this.cb_eventType.Location = new System.Drawing.Point(141, 95);
+            this.cb_eventType.Name = "cb_eventType";
+            this.cb_eventType.Size = new System.Drawing.Size(200, 21);
+            this.cb_eventType.TabIndex = 4;
             // 
             // label10
             // 
@@ -511,7 +543,7 @@
             this.dtp_eventEnds.Location = new System.Drawing.Point(141, 69);
             this.dtp_eventEnds.Name = "dtp_eventEnds";
             this.dtp_eventEnds.Size = new System.Drawing.Size(200, 20);
-            this.dtp_eventEnds.TabIndex = 5;
+            this.dtp_eventEnds.TabIndex = 3;
             // 
             // label9
             // 
@@ -527,7 +559,7 @@
             this.dtp_eventStarts.Location = new System.Drawing.Point(141, 43);
             this.dtp_eventStarts.Name = "dtp_eventStarts";
             this.dtp_eventStarts.Size = new System.Drawing.Size(200, 20);
-            this.dtp_eventStarts.TabIndex = 3;
+            this.dtp_eventStarts.TabIndex = 2;
             // 
             // label8
             // 
@@ -563,38 +595,6 @@
             this.tabPage3.Text = "Rendezvény inspection";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tb_equipmentId
-            // 
-            this.tb_equipmentId.Location = new System.Drawing.Point(419, 168);
-            this.tb_equipmentId.Name = "tb_equipmentId";
-            this.tb_equipmentId.Size = new System.Drawing.Size(166, 20);
-            this.tb_equipmentId.TabIndex = 32;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(357, 168);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(58, 13);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "Azonosító:";
-            // 
-            // tb_truckId
-            // 
-            this.tb_truckId.Location = new System.Drawing.Point(419, 48);
-            this.tb_truckId.Name = "tb_truckId";
-            this.tb_truckId.Size = new System.Drawing.Size(166, 20);
-            this.tb_truckId.TabIndex = 34;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(357, 48);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(58, 13);
-            this.label19.TabIndex = 33;
-            this.label19.Text = "Azonosító:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -619,7 +619,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_equipmentVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_propQuantity_adding)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
@@ -653,13 +653,13 @@
         private System.Windows.Forms.DateTimePicker dtp_eventStarts;
         private System.Windows.Forms.DateTimePicker dtp_eventEnds;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_eventType;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.TextBox tb_propId_adding;
+        private System.Windows.Forms.NumericUpDown nud_propQuantity_adding;
         private System.Windows.Forms.Button btn_addEvent;
         private System.Windows.Forms.Button btn_addProp_newevent;
         private System.Windows.Forms.Label label3;

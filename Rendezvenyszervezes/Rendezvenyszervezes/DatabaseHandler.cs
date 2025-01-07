@@ -9,18 +9,27 @@ using System.Windows.Forms;
 namespace Rendezvenyszervezes {
     public class DatabaseHandler {
         private readonly string connectionString;
+        private MySqlConnection connection;
 
         public DatabaseHandler(string connectionString) {
             this.connectionString = connectionString;
+            ConnectToDb();
+        }
+        public void ConnectToDb() {
+            if (this.connectionString != null) {
+                connection = new MySqlConnection(this.connectionString);
+                connection.Open();
+            } else {
+                MessageBox.Show("Couldn't connect to database", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public string[][] Query(string queryStr) {
             List<string[]> results = new List<string[]>();
 
             try {
-                using(MySqlConnection conn = new MySqlConnection(connectionString)) {
-                    conn.Open();
-                    using(MySqlCommand cmd = new MySqlCommand(queryStr, conn)) {
+                
+                    using(MySqlCommand cmd = new MySqlCommand(queryStr, connection)) {
                         using(MySqlDataReader reader = cmd.ExecuteReader()) {
                             int columnCount = reader.FieldCount;
 
@@ -33,7 +42,7 @@ namespace Rendezvenyszervezes {
                             }
                         }
                     }
-                }
+                
             } catch(Exception ex) {
                 MessageBox.Show($"Error: {ex.Message}", "Lorem", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Rendezvenyszervezes\\Event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\rendezvenyszervezes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:rendezvenyszervezes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\rendezvenyszervezes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:rendezvenyszervezes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|d:\\lehel barnab\u00E1s 13p\\rendezvenyszervezes-projekt\\rendezvenyszervezes\\rendezvenyszervezes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:rendezvenyszervezes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\rendezvenyszervezes\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:rendezvenyszervezes\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\TimeOfDay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:Rendezvenyszervezes\\TimeOfDay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|d:\\lehel barnab\u00E1s 13p\\rendezvenyszervezes-projekt\\rendezvenyszervezes\\rendezvenyszervezes\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:rendezvenyszervezes\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\VenueType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:Rendezvenyszervezes\\Venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\TimeOfDay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ABC6C05-CD97-4A5B-9BF9-E2A13B810D9D}|Rendezvenyszervezes\\Rendezvenyszervezes.csproj|solutionrelative:Rendezvenyszervezes\\TimeOfDay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 500,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Event.cs",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Event.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\Event.cs",
               "ToolTip": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Event.cs",
               "RelativeToolTip": "Rendezvenyszervezes\\Event.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T11:08:30.66Z",
               "EditorCaption": ""
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\Form1.cs",
               "ToolTip": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Form1.cs",
               "RelativeToolTip": "Rendezvenyszervezes\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAA9wEQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenGroupName": "Rendezvenyszervezes",
               "WhenOpened": "2025-01-07T08:49:35.546Z",
@@ -73,20 +73,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DatabaseHandler.cs",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\DatabaseHandler.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\DatabaseHandler.cs",
               "ToolTip": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\DatabaseHandler.cs",
               "RelativeToolTip": "Rendezvenyszervezes\\DatabaseHandler.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAwwCUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T08:49:35.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "TimeOfDay.cs",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\TimeOfDay.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\TimeOfDay.cs",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "VenueType.cs",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\VenueType.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\VenueType.cs",
@@ -108,12 +108,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenGroupName": "Rendezvenyszervezes",
-              "WhenOpened": "2025-01-07T08:49:35.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T08:49:35.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Venue.cs",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Venue.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\Venue.cs",
@@ -121,12 +120,11 @@
               "RelativeToolTip": "Rendezvenyszervezes\\Venue.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAwwCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T08:49:35.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T08:49:35.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Program.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\Program.cs",
@@ -134,12 +132,11 @@
               "RelativeToolTip": "Rendezvenyszervezes\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwBEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T08:49:35.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T08:49:35.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Lehel Barnab\u00E1s 13p\\Rendezvenyszervezes-projekt\\Rendezvenyszervezes\\Rendezvenyszervezes\\Form1.cs",
               "RelativeDocumentMoniker": "Rendezvenyszervezes\\Form1.cs",
