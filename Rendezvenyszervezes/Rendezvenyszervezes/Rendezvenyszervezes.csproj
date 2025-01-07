@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
+    <Compile Include="Truck.cs" />
     <Compile Include="DatabaseHandler.cs" />
     <Compile Include="Equipment.cs" />
     <Compile Include="Event.cs" />

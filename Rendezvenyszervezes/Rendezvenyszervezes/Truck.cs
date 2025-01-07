@@ -1,5 +1,5 @@
 namespace Rendezvenyszervezes {
-    class Car {
+    class Truck {
         // TODO
     }
 }
