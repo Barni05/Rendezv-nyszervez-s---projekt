@@ -59,7 +59,7 @@ namespace Rendezvenyszervezes {
             int truckLocation = Convert.ToInt32(tb_truckLocation.Text);
             string query = $"""INSERT INTO truck (truck_id, current_location) VALUES("{truckId}", "{truckLocation}");""";
             databaseHandler.Query(query);
-            query = $""" INSERT INTO truckparking (parking_id, truck_id) VALUES("{truckLocation}", "{truckId}");""";
+            query = $"""INSERT INTO truckparking (parking_id, truck_id) VALUES("{truckLocation}", "{truckId}");""";
             databaseHandler.Query(query);
         }
         private void BindInputs() {
