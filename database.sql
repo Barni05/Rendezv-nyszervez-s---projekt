@@ -22,7 +22,6 @@ CREATE TABLE Warehouse (
     FOREIGN KEY (location_id) REFERENCES Locations(location_id)
 );
 
--- Create Equipment table
 CREATE TABLE Equipment (
     equipment_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,

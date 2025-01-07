@@ -30,3 +30,5 @@ C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszerve
 C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.csproj.CopyComplete
 C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.exe
 C:\DEV\Projects\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezvenyszervezes.pdb
+D:\Lehel Barnabás 13p\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\bin\Debug\MySql.Data.dll
+D:\Lehel Barnabás 13p\Rendezvenyszervezes-projekt\Rendezvenyszervezes\Rendezvenyszervezes\obj\Debug\Rendezve.F880FF50.Up2Date
