@@ -80,6 +80,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tb_eventId = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.btn_refresh = new System.Windows.Forms.Button();
             label13 = new System.Windows.Forms.Label();
             label14 = new System.Windows.Forms.Label();
             this.tabPage2.SuspendLayout();
@@ -118,6 +119,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btn_refresh);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -609,6 +611,15 @@
             this.label20.TabIndex = 34;
             this.label20.Text = "Rendezvény azonosítója:";
             // 
+            // btn_refresh
+            // 
+            this.btn_refresh.Location = new System.Drawing.Point(6, 6);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(75, 23);
+            this.btn_refresh.TabIndex = 2;
+            this.btn_refresh.Text = "Frissítés";
+            this.btn_refresh.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -690,6 +701,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox tb_eventId;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btn_refresh;
     }
 }
 

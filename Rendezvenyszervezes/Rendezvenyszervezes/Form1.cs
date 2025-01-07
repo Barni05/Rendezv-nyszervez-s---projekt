@@ -82,12 +82,16 @@ namespace Rendezvenyszervezes {
                 query = $"""INSERT INTO event_equipment (event_id,equipment_id,quantity) VALUES({eventId}, {equipment.Id}, {equipment.Size})""";
                 databaseHandler.Query(query);
             }
-        }  
+        }
+        private void FetchEvents() {
+            //string[][] events = $"""SELECT event_id, start_date, end_date""";
+        }
         private void BindInputs() {
             btn_addEquipment.Click += (sender, e) => Click_kellekfelvetel();
             btn_addCars.Click += (sender, e) => Click_autofelvetel();
             btn_addProp_newevent.Click += (sender, e) => Click_kellekfelvetel_event();
             btn_addEvent.Click += (sender, e) => Click_eventfelvetel();
+            btn_refresh.Click += (sender, e) => FetchEvents();
         }
     }
 }
