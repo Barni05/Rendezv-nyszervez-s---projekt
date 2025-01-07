@@ -32,17 +32,17 @@ namespace Rendezvenyszervezes {
             dt = new DataTable();
             dt.Columns.Add("Kellék neve".ToString());
             dt.Columns.Add("Hol tartózkodik".ToString());
-             dr = dt.NewRow();
+            dr = dt.NewRow();
             dr["Kellék neve"] = "Mike Wazowski";
             dr["Hol tartózkodik"] = "Hajdúszoboszló";
             dt.Rows.Add(dr);
 
             grid_props.DataSource = dt;
-			
-			Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
+
+            Venue v = new(400, TimeOfDay.AllDay, 10, VenueType.Seated);
             BindInputs();
         }
-        private void Click_kellekfelvetel() { 
+        private void Click_kellekfelvetel() {
             //Extracting user data
             int quantity = Convert.ToInt32(nud_equipmentVolume.Value);
             string propName = tb_equipmentName.Text;
@@ -50,7 +50,7 @@ namespace Rendezvenyszervezes {
             int equipmentId = Convert.ToInt32(tb_equipmentId.Text);
             string query = $"INSERT INTO equipment (equipment_id, name, volume) VALUES(\"{equipmentId}\",\"{propName}\", \"{quantity}\");";
             databaseHandler.Query(query);
-            query = $"INSERT INTO warehouse_equipment (warehouse_id, equipment_id, quantity) VALUES(\"{propLocation}\", \"{equipmentId}\", \"{quantity}\")";
+            query = $"INSERT INTO warehouse_equipment (warehouse_id, equipment_id, quantity) VALUES(\"{propLocation}\", \"{equipmentId}\", \"{quantity}\");";
             databaseHandler.Query(query);
         }
         private void Click_autofelvetel() {

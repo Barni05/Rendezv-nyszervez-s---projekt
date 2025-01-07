@@ -16,7 +16,7 @@ namespace Rendezvenyszervezes {
             ConnectToDb();
         }
         public void ConnectToDb() {
-            if (this.connectionString != null) {
+            if(this.connectionString != null) {
                 connection = new MySqlConnection(this.connectionString);
                 connection.Open();
             } else {
@@ -28,21 +28,21 @@ namespace Rendezvenyszervezes {
             List<string[]> results = new List<string[]>();
 
             try {
-                
-                    using(MySqlCommand cmd = new MySqlCommand(queryStr, connection)) {
-                        using(MySqlDataReader reader = cmd.ExecuteReader()) {
-                            int columnCount = reader.FieldCount;
 
-                            while(reader.Read()) {
-                                string[] row = new string[columnCount];
-                                for(int i = 0; i < columnCount; i++) {
-                                    row[i] = reader.GetValue(i).ToString();
-                                }
-                                results.Add(row);
+                using(MySqlCommand cmd = new MySqlCommand(queryStr, connection)) {
+                    using(MySqlDataReader reader = cmd.ExecuteReader()) {
+                        int columnCount = reader.FieldCount;
+
+                        while(reader.Read()) {
+                            string[] row = new string[columnCount];
+                            for(int i = 0; i < columnCount; i++) {
+                                row[i] = reader.GetValue(i).ToString();
                             }
+                            results.Add(row);
                         }
                     }
-                
+                }
+
             } catch(Exception ex) {
                 MessageBox.Show($"Error: {ex.Message}", "Lorem", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
