@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Jan 07. 14:45
--- Kiszolgáló verziója: 10.4.28-MariaDB
--- PHP verzió: 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Jan 08, 2025 at 04:28 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Adatbázis: `event_organizer`
+-- Database: `event_organizer`
 --
 CREATE DATABASE IF NOT EXISTS `event_organizer` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `event_organizer`;
@@ -26,7 +26,7 @@ USE `event_organizer`;
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `equipment`
+-- Table structure for table `equipment`
 --
 
 CREATE TABLE IF NOT EXISTS `equipment` (
@@ -37,18 +37,19 @@ CREATE TABLE IF NOT EXISTS `equipment` (
 ) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- A tábla adatainak kiíratása `equipment`
+-- Dumping data for table `equipment`
 --
 
 INSERT INTO `equipment` (`equipment_id`, `name`, `size`) VALUES
 (1, 'Gizmo szőrős teste', 23),
+(5, 'Elemlámpa', 40),
 (102, 'sdfsdfsdfsdbfsd', 334),
 (103, 'fdsdsf', 4);
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `event`
+-- Table structure for table `event`
 --
 
 CREATE TABLE IF NOT EXISTS `event` (
@@ -59,12 +60,23 @@ CREATE TABLE IF NOT EXISTS `event` (
   `type` varchar(255) NOT NULL,
   PRIMARY KEY (`event_id`),
   KEY `location_id` (`location_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `event`
+--
+
+INSERT INTO `event` (`event_id`, `location_id`, `start_date`, `end_date`, `type`) VALUES
+(1, 2, '2025-01-22', '2025-01-31', 'fdfsdf'),
+(2, 3, '2025-01-22', '2025-01-31', 'gizmo'),
+(3, 2, '2025-01-07', '2025-01-18', 'álló'),
+(4, 2, '2025-01-07', '2025-01-17', 'álló'),
+(75, 2, '2025-01-11', '2025-02-15', 'álló');
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `event_equipment`
+-- Table structure for table `event_equipment`
 --
 
 CREATE TABLE IF NOT EXISTS `event_equipment` (
@@ -75,10 +87,19 @@ CREATE TABLE IF NOT EXISTS `event_equipment` (
   KEY `equipment_id` (`equipment_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `event_equipment`
+--
+
+INSERT INTO `event_equipment` (`event_id`, `equipment_id`, `quantity`) VALUES
+(4, 1, 3),
+(75, 1, 20),
+(75, 102, 10);
+
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `locations`
+-- Table structure for table `locations`
 --
 
 CREATE TABLE IF NOT EXISTS `locations` (
@@ -91,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `locations` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- A tábla adatainak kiíratása `locations`
+-- Dumping data for table `locations`
 --
 
 INSERT INTO `locations` (`location_id`, `capacity`, `available_times`, `elegance`, `catering_type`) VALUES
@@ -102,7 +123,7 @@ INSERT INTO `locations` (`location_id`, `capacity`, `available_times`, `elegance
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `truck`
+-- Table structure for table `truck`
 --
 
 CREATE TABLE IF NOT EXISTS `truck` (
@@ -110,25 +131,21 @@ CREATE TABLE IF NOT EXISTS `truck` (
   `current_location` int(11) NOT NULL,
   PRIMARY KEY (`truck_id`),
   KEY `current_location` (`current_location`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `truck`
+--
+
+INSERT INTO `truck` (`truck_id`, `current_location`) VALUES
+(3, 1),
+(1, 3),
+(2, 3);
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `truckparking`
---
-
-CREATE TABLE IF NOT EXISTS `truckparking` (
-  `parking_id` int(11) NOT NULL AUTO_INCREMENT,
-  `truck_id` int(11) NOT NULL,
-  PRIMARY KEY (`parking_id`),
-  KEY `truck_id` (`truck_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `warehouse`
+-- Table structure for table `warehouse`
 --
 
 CREATE TABLE IF NOT EXISTS `warehouse` (
@@ -138,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `warehouse` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- A tábla adatainak kiíratása `warehouse`
+-- Dumping data for table `warehouse`
 --
 
 INSERT INTO `warehouse` (`warehouse_id`, `capacity`) VALUES
@@ -147,7 +164,7 @@ INSERT INTO `warehouse` (`warehouse_id`, `capacity`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `warehouse_equipment`
+-- Table structure for table `warehouse_equipment`
 --
 
 CREATE TABLE IF NOT EXISTS `warehouse_equipment` (
@@ -159,44 +176,39 @@ CREATE TABLE IF NOT EXISTS `warehouse_equipment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- A tábla adatainak kiíratása `warehouse_equipment`
+-- Dumping data for table `warehouse_equipment`
 --
 
 INSERT INTO `warehouse_equipment` (`warehouse_id`, `equipment_id`, `quantity`) VALUES
-(1, 1, 23);
+(1, 1, 23),
+(1, 5, 40),
+(1, 102, 20);
 
 --
--- Megkötések a kiírt táblákhoz
+-- Constraints for dumped tables
 --
 
 --
--- Megkötések a táblához `event`
+-- Constraints for table `event`
 --
 ALTER TABLE `event`
   ADD CONSTRAINT `event_ibfk_1` FOREIGN KEY (`location_id`) REFERENCES `locations` (`location_id`);
 
 --
--- Megkötések a táblához `event_equipment`
+-- Constraints for table `event_equipment`
 --
 ALTER TABLE `event_equipment`
   ADD CONSTRAINT `event_equipment_ibfk_1` FOREIGN KEY (`event_id`) REFERENCES `event` (`event_id`),
   ADD CONSTRAINT `event_equipment_ibfk_2` FOREIGN KEY (`equipment_id`) REFERENCES `equipment` (`equipment_id`);
 
 --
--- Megkötések a táblához `truck`
+-- Constraints for table `truck`
 --
 ALTER TABLE `truck`
   ADD CONSTRAINT `truck_ibfk_2` FOREIGN KEY (`current_location`) REFERENCES `locations` (`location_id`);
 
 --
--- Megkötések a táblához `truckparking`
---
-ALTER TABLE `truckparking`
-  ADD CONSTRAINT `truckparking_ibfk_1` FOREIGN KEY (`parking_id`) REFERENCES `locations` (`location_id`),
-  ADD CONSTRAINT `truckparking_ibfk_2` FOREIGN KEY (`truck_id`) REFERENCES `truck` (`truck_id`);
-
---
--- Megkötések a táblához `warehouse_equipment`
+-- Constraints for table `warehouse_equipment`
 --
 ALTER TABLE `warehouse_equipment`
   ADD CONSTRAINT `warehouse_equipment_ibfk_1` FOREIGN KEY (`warehouse_id`) REFERENCES `warehouse` (`warehouse_id`),
