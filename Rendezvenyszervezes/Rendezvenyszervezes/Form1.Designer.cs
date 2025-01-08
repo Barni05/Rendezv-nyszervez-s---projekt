@@ -36,8 +36,10 @@
 			this.dgw_events = new System.Windows.Forms.DataGridView();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.label2 = new System.Windows.Forms.Label();
 			this.dgw_equipments = new System.Windows.Forms.DataGridView();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.btn_refreshtables = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.dgw_trucks = new System.Windows.Forms.DataGridView();
 			this.lb_carNumber = new System.Windows.Forms.Label();
@@ -74,8 +76,22 @@
 			this.tb_eventVenue = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
-			this.label2 = new System.Windows.Forms.Label();
-			this.btn_refreshtables = new System.Windows.Forms.Button();
+			this.dgw_eventequipment = new System.Windows.Forms.DataGridView();
+			this.label4 = new System.Windows.Forms.Label();
+			this.tb_eventId_Find = new System.Windows.Forms.TextBox();
+			this.btn_evaluateEvent = new System.Windows.Forms.Button();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label21 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label24 = new System.Windows.Forms.Label();
+			this.dgw_eventequipments_inspection = new System.Windows.Forms.DataGridView();
+			this.lbl_eventcanbe = new System.Windows.Forms.Label();
+			this.lbl_venue = new System.Windows.Forms.Label();
+			this.lbl_type = new System.Windows.Forms.Label();
+			this.lbl_start = new System.Windows.Forms.Label();
+			this.lbl_end = new System.Windows.Forms.Label();
 			label13 = new System.Windows.Forms.Label();
 			label14 = new System.Windows.Forms.Label();
 			this.tabPage2.SuspendLayout();
@@ -89,6 +105,10 @@
 			this.tabPage4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nud_equipmentVolume)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nud_propQuantity_adding)).BeginInit();
+			this.tabPage3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgw_eventequipment)).BeginInit();
+			this.panel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgw_eventequipments_inspection)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label13
@@ -121,7 +141,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage2.Size = new System.Drawing.Size(768, 400);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Rendezvényszervezés";
+			this.tabPage2.Text = "Rendezvények";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
 			// btn_refreshEvents
@@ -161,7 +181,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(768, 400);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Erőforrás";
+			this.tabPage1.Text = "Erőforrások";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
 			// panel2
@@ -175,6 +195,16 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(756, 195);
 			this.panel2.TabIndex = 1;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.label2.Location = new System.Drawing.Point(343, 17);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(87, 25);
+			this.label2.TabIndex = 5;
+			this.label2.Text = "Kellékek";
 			// 
 			// dgw_equipments
 			// 
@@ -202,6 +232,15 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(756, 190);
 			this.panel1.TabIndex = 0;
+			// 
+			// btn_refreshtables
+			// 
+			this.btn_refreshtables.Location = new System.Drawing.Point(13, 22);
+			this.btn_refreshtables.Name = "btn_refreshtables";
+			this.btn_refreshtables.Size = new System.Drawing.Size(75, 23);
+			this.btn_refreshtables.TabIndex = 5;
+			this.btn_refreshtables.Text = "Frissítés";
+			this.btn_refreshtables.UseVisualStyleBackColor = true;
 			// 
 			// label1
 			// 
@@ -253,6 +292,7 @@
 			// 
 			// tabPage4
 			// 
+			this.tabPage4.Controls.Add(this.dgw_eventequipment);
 			this.tabPage4.Controls.Add(this.tb_eventId);
 			this.tabPage4.Controls.Add(this.label20);
 			this.tabPage4.Controls.Add(this.tb_truckId);
@@ -289,7 +329,7 @@
 			this.tabPage4.Name = "tabPage4";
 			this.tabPage4.Size = new System.Drawing.Size(768, 400);
 			this.tabPage4.TabIndex = 3;
-			this.tabPage4.Text = "Új dolgok";
+			this.tabPage4.Text = "Hozzáadás";
 			this.tabPage4.UseVisualStyleBackColor = true;
 			// 
 			// tb_eventId
@@ -546,31 +586,177 @@
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.Controls.Add(this.panel3);
+			this.tabPage3.Controls.Add(this.btn_evaluateEvent);
+			this.tabPage3.Controls.Add(this.tb_eventId_Find);
+			this.tabPage3.Controls.Add(this.label4);
 			this.tabPage3.Location = new System.Drawing.Point(4, 22);
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Size = new System.Drawing.Size(768, 400);
 			this.tabPage3.TabIndex = 2;
-			this.tabPage3.Text = "Rendezvény inspection";
+			this.tabPage3.Text = "Rendezvény tervezés";
 			this.tabPage3.UseVisualStyleBackColor = true;
 			// 
-			// label2
+			// dgw_eventequipment
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label2.Location = new System.Drawing.Point(343, 17);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(87, 25);
-			this.label2.TabIndex = 5;
-			this.label2.Text = "Kellékek";
+			this.dgw_eventequipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgw_eventequipment.Location = new System.Drawing.Point(30, 233);
+			this.dgw_eventequipment.Name = "dgw_eventequipment";
+			this.dgw_eventequipment.Size = new System.Drawing.Size(318, 98);
+			this.dgw_eventequipment.TabIndex = 36;
 			// 
-			// btn_refreshtables
+			// label4
 			// 
-			this.btn_refreshtables.Location = new System.Drawing.Point(13, 22);
-			this.btn_refreshtables.Name = "btn_refreshtables";
-			this.btn_refreshtables.Size = new System.Drawing.Size(75, 23);
-			this.btn_refreshtables.TabIndex = 5;
-			this.btn_refreshtables.Text = "Frissítés";
-			this.btn_refreshtables.UseVisualStyleBackColor = true;
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(3, 9);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(194, 20);
+			this.label4.TabIndex = 0;
+			this.label4.Text = "A rendezvény azonosítója:";
+			// 
+			// tb_eventId_Find
+			// 
+			this.tb_eventId_Find.Location = new System.Drawing.Point(203, 9);
+			this.tb_eventId_Find.Name = "tb_eventId_Find";
+			this.tb_eventId_Find.Size = new System.Drawing.Size(105, 20);
+			this.tb_eventId_Find.TabIndex = 1;
+			// 
+			// btn_evaluateEvent
+			// 
+			this.btn_evaluateEvent.Location = new System.Drawing.Point(314, 9);
+			this.btn_evaluateEvent.Name = "btn_evaluateEvent";
+			this.btn_evaluateEvent.Size = new System.Drawing.Size(75, 23);
+			this.btn_evaluateEvent.TabIndex = 2;
+			this.btn_evaluateEvent.Text = "Mehet";
+			this.btn_evaluateEvent.UseVisualStyleBackColor = true;
+			// 
+			// panel3
+			// 
+			this.panel3.Controls.Add(this.lbl_end);
+			this.panel3.Controls.Add(this.lbl_start);
+			this.panel3.Controls.Add(this.lbl_type);
+			this.panel3.Controls.Add(this.lbl_venue);
+			this.panel3.Controls.Add(this.lbl_eventcanbe);
+			this.panel3.Controls.Add(this.dgw_eventequipments_inspection);
+			this.panel3.Controls.Add(this.label24);
+			this.panel3.Controls.Add(this.label23);
+			this.panel3.Controls.Add(this.label22);
+			this.panel3.Controls.Add(this.label21);
+			this.panel3.Controls.Add(this.label5);
+			this.panel3.Location = new System.Drawing.Point(7, 50);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(758, 347);
+			this.panel3.TabIndex = 3;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(3, 9);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(72, 20);
+			this.label5.TabIndex = 1;
+			this.label5.Text = "Helyszín:";
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.Location = new System.Drawing.Point(3, 38);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(51, 20);
+			this.label21.TabIndex = 2;
+			this.label21.Text = "Típus:";
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label22.Location = new System.Drawing.Point(3, 68);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(63, 20);
+			this.label22.TabIndex = 3;
+			this.label22.Text = "Kezdet:";
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label23.Location = new System.Drawing.Point(3, 102);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(51, 20);
+			this.label23.TabIndex = 4;
+			this.label23.Text = "Vége:";
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label24.Location = new System.Drawing.Point(389, 9);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(68, 20);
+			this.label24.TabIndex = 5;
+			this.label24.Text = "Kellékek";
+			// 
+			// dgw_eventequipments_inspection
+			// 
+			this.dgw_eventequipments_inspection.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgw_eventequipments_inspection.Location = new System.Drawing.Point(393, 38);
+			this.dgw_eventequipments_inspection.Name = "dgw_eventequipments_inspection";
+			this.dgw_eventequipments_inspection.Size = new System.Drawing.Size(362, 306);
+			this.dgw_eventequipments_inspection.TabIndex = 6;
+			// 
+			// lbl_eventcanbe
+			// 
+			this.lbl_eventcanbe.AutoSize = true;
+			this.lbl_eventcanbe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_eventcanbe.ForeColor = System.Drawing.Color.DarkOrange;
+			this.lbl_eventcanbe.Location = new System.Drawing.Point(3, 159);
+			this.lbl_eventcanbe.Name = "lbl_eventcanbe";
+			this.lbl_eventcanbe.Size = new System.Drawing.Size(14, 20);
+			this.lbl_eventcanbe.TabIndex = 7;
+			this.lbl_eventcanbe.Text = "-";
+			// 
+			// lbl_venue
+			// 
+			this.lbl_venue.AutoSize = true;
+			this.lbl_venue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_venue.Location = new System.Drawing.Point(81, 9);
+			this.lbl_venue.Name = "lbl_venue";
+			this.lbl_venue.Size = new System.Drawing.Size(14, 20);
+			this.lbl_venue.TabIndex = 8;
+			this.lbl_venue.Text = "-";
+			// 
+			// lbl_type
+			// 
+			this.lbl_type.AutoSize = true;
+			this.lbl_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_type.Location = new System.Drawing.Point(81, 38);
+			this.lbl_type.Name = "lbl_type";
+			this.lbl_type.Size = new System.Drawing.Size(14, 20);
+			this.lbl_type.TabIndex = 9;
+			this.lbl_type.Text = "-";
+			// 
+			// lbl_start
+			// 
+			this.lbl_start.AutoSize = true;
+			this.lbl_start.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_start.Location = new System.Drawing.Point(81, 68);
+			this.lbl_start.Name = "lbl_start";
+			this.lbl_start.Size = new System.Drawing.Size(14, 20);
+			this.lbl_start.TabIndex = 10;
+			this.lbl_start.Text = "-";
+			// 
+			// lbl_end
+			// 
+			this.lbl_end.AutoSize = true;
+			this.lbl_end.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_end.Location = new System.Drawing.Point(81, 102);
+			this.lbl_end.Name = "lbl_end";
+			this.lbl_end.Size = new System.Drawing.Size(14, 20);
+			this.lbl_end.TabIndex = 11;
+			this.lbl_end.Text = "-";
 			// 
 			// Form1
 			// 
@@ -596,6 +782,12 @@
 			this.tabPage4.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nud_equipmentVolume)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nud_propQuantity_adding)).EndInit();
+			this.tabPage3.ResumeLayout(false);
+			this.tabPage3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgw_eventequipment)).EndInit();
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgw_eventequipments_inspection)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -648,6 +840,22 @@
         private System.Windows.Forms.Button btn_refreshEvents;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btn_refreshtables;
+		private System.Windows.Forms.DataGridView dgw_eventequipment;
+		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Label label23;
+		private System.Windows.Forms.Label label22;
+		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Button btn_evaluateEvent;
+		private System.Windows.Forms.TextBox tb_eventId_Find;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.DataGridView dgw_eventequipments_inspection;
+		private System.Windows.Forms.Label label24;
+		private System.Windows.Forms.Label lbl_end;
+		private System.Windows.Forms.Label lbl_start;
+		private System.Windows.Forms.Label lbl_type;
+		private System.Windows.Forms.Label lbl_venue;
+		private System.Windows.Forms.Label lbl_eventcanbe;
 	}
 }
 
